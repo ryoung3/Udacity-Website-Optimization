@@ -275,8 +275,9 @@ function updatePositions() {
 window.addEventListener("scroll", onScroll);
 document.addEventListener("DOMContentLoaded", function() {
     var d = 8;
+    var h = window.screen.height;
     var b = 256;
-    for (var a = 0; a < 200; a++) {
+    for (var a = 0; a < (d*h); a++) {
         var c = document.createElement("img");
         c.className = "mover";
         c.src = "images/pizza.png";
